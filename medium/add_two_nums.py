@@ -15,7 +15,7 @@ def add_node(curr, new_v):
     return curr
 
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]):
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode):
         q=0
         b = l1.val+l2.val
         a = ListNode(b%10)
