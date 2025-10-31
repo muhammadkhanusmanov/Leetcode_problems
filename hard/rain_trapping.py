@@ -6,9 +6,18 @@ def hisoblagich(height,v):
             if m<=height[i]:
                 if b:
                     d = min(m, height[i])
-…            
+                    for k in b:
+                        s+=d-k
+                    v+=s
+                    s=0
+                    b=[]
+                m=height[i]
+            else:
+                b.append(height[i])
+    return [v, b, m]
+
 class Solution:
-    def trap(self, height: List[int]) -> int:
+    def trap(self, height) -> int:
         a = hisoblagich(height, 0)
         v, b = a[0], a[1]
         if a:
