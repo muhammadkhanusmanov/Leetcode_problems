@@ -7,7 +7,7 @@ def hisoblagich(height,v):
                 if b:
                     d = min(m, height[i])
                     for k in b:
-                        s+=d-k
+                        s+=d-k  
                     v+=s
                     s=0
                     b=[]
